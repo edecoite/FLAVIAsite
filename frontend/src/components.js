@@ -32,8 +32,8 @@ export const Header = ({ onBookAppointment }) => {
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-gradient-to-br from-purple-600 to-pink-200 rounded-full flex items-center justify-center border-2 border-amber-400">
-                  <span className="text-white font-bold text-lg">FD</span>
+                <div className="w-12 h-12 bg-gradient-to-br from-pink-200 to-yellow-500 rounded-full flex items-center justify-center border-2 border-yellow-500 shadow-lg">
+                  <span className="text-gray-800 font-bold text-lg">FD</span>
                 </div>
                 <div>
                   <h1 className="text-xl font-bold text-gray-900">Flavia DeCoite</h1>
