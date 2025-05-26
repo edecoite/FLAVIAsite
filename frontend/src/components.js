@@ -623,7 +623,7 @@ export const ContactSection = ({ onBookAppointment }) => {
             <div className="mt-8">
               <button 
                 onClick={onBookAppointment}
-                className="bg-gradient-to-r from-purple-600 to-pink-500 text-white px-8 py-4 rounded-full hover:shadow-xl transition-all duration-300 font-medium text-lg flex items-center"
+                className="bg-gradient-to-r from-purple-600 via-pink-200 to-amber-500 text-white px-8 py-4 rounded-full hover:shadow-xl transition-all duration-300 font-medium text-lg flex items-center"
               >
                 Schedule Free Consultation
                 <ArrowRight className="ml-2 h-5 w-5" />
