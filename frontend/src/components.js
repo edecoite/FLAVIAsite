@@ -62,13 +62,13 @@ export const Header = ({ onBookAppointment }) => {
           </nav>
           
           <div className="flex items-center space-x-4">
-            <a href="tel:925-354-6444" className="hidden md:flex items-center text-gray-600 hover:text-purple-600 transition-colors">
+            <a href="tel:925-354-6444" className="hidden md:flex items-center text-gray-600 hover:text-amber-600 transition-colors">
               <Phone className="h-4 w-4 mr-2" />
               (925) 354-6444
             </a>
             <button 
               onClick={onBookAppointment}
-              className="bg-gradient-to-r from-purple-600 to-pink-500 text-white px-6 py-2 rounded-full hover:shadow-lg transition-all duration-300 font-medium"
+              className="bg-gradient-to-r from-purple-600 via-pink-200 to-amber-500 text-white px-6 py-2 rounded-full hover:shadow-lg transition-all duration-300 font-medium"
             >
               Book Consultation
             </button>
