@@ -106,7 +106,7 @@ export const HeroSection = ({ onBookAppointment }) => {
             
             <h1 className="text-5xl lg:text-6xl font-bold leading-tight mb-6">
               The Care You{' '}
-              <span className="bg-gradient-to-r from-pink-200 to-amber-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-pink-200 to-yellow-500 bg-clip-text text-transparent">
                 Deserve
               </span>
             </h1>
