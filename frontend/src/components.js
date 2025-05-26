@@ -825,7 +825,7 @@ export const AppointmentModal = ({ isOpen, onClose }) => {
           
           <button 
             type="submit"
-            className="w-full bg-gradient-to-r from-purple-600 to-pink-500 text-white py-3 rounded-lg hover:shadow-lg transition-all duration-300 font-medium"
+            className="w-full bg-gradient-to-r from-purple-600 via-pink-200 to-amber-500 text-white py-3 rounded-lg hover:shadow-lg transition-all duration-300 font-medium"
           >
             Request Appointment
           </button>
