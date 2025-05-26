@@ -190,7 +190,7 @@ export const AboutSection = () => {
                 alt="Flavia DeCoite, LMFT"
                 className="w-full h-auto rounded-2xl shadow-2xl"
               />
-              <div className="absolute -bottom-6 -right-6 bg-gradient-to-r from-purple-600 to-pink-500 rounded-2xl p-6 text-white">
+              <div className="absolute -bottom-6 -right-6 bg-gradient-to-r from-amber-500 to-yellow-500 rounded-2xl p-6 text-white">
                 <Award className="h-8 w-8 mb-2" />
                 <div className="text-sm font-medium">Licensed LMFT</div>
                 <div className="text-xs opacity-90">California #XXXXX</div>
