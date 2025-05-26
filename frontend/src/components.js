@@ -428,7 +428,7 @@ export const ApproachSection = () => {
                   viewport={{ once: true }}
                   className="flex items-start space-x-4"
                 >
-                  <div className="bg-gradient-to-r from-purple-600 to-pink-500 rounded-lg p-3 flex-shrink-0">
+                  <div className="bg-gradient-to-r from-amber-500 to-yellow-500 rounded-lg p-3 flex-shrink-0">
                     <approach.icon className="h-6 w-6 text-white" />
                   </div>
                   <div>
