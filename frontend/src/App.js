@@ -3,37 +3,32 @@ import './App.css';
 import { 
   Header, 
   HeroSection, 
-  AffiliateSection, 
-  PlatformSection, 
-  AISection, 
+  AboutSection, 
+  ServicesSection, 
+  ApproachSection,
+  TestimonialsSection,
+  ContactSection,
   Footer,
-  SignInModal,
-  SignUpModal 
+  AppointmentModal
 } from './components';
 
 function App() {
-  const [isSignInOpen, setIsSignInOpen] = useState(false);
-  const [isSignUpOpen, setIsSignUpOpen] = useState(false);
+  const [isAppointmentOpen, setIsAppointmentOpen] = useState(false);
 
   return (
     <div className="App bg-white min-h-screen">
-      <Header 
-        onSignInClick={() => setIsSignInOpen(true)}
-        onSignUpClick={() => setIsSignUpOpen(true)}
-      />
-      <HeroSection onBookDemoClick={() => setIsSignUpOpen(true)} />
-      <AffiliateSection />
-      <PlatformSection />
-      <AISection />
+      <Header onBookAppointment={() => setIsAppointmentOpen(true)} />
+      <HeroSection onBookAppointment={() => setIsAppointmentOpen(true)} />
+      <AboutSection />
+      <ServicesSection />
+      <ApproachSection />
+      <TestimonialsSection />
+      <ContactSection onBookAppointment={() => setIsAppointmentOpen(true)} />
       <Footer />
       
-      <SignInModal 
-        isOpen={isSignInOpen} 
-        onClose={() => setIsSignInOpen(false)} 
-      />
-      <SignUpModal 
-        isOpen={isSignUpOpen} 
-        onClose={() => setIsSignUpOpen(false)} 
+      <AppointmentModal 
+        isOpen={isAppointmentOpen} 
+        onClose={() => setIsAppointmentOpen(false)} 
       />
     </div>
   );
