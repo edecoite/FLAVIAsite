@@ -309,7 +309,7 @@ export const ServicesSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="inline-block bg-purple-100 text-purple-600 px-4 py-2 rounded-full text-sm font-medium mb-4">
+          <span className="inline-block bg-pink-100 text-pink-600 px-4 py-2 rounded-full text-sm font-medium mb-4">
             Therapeutic Services
           </span>
           <h2 className="text-4xl font-bold text-gray-900 mb-6">
