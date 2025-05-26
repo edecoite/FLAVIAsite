@@ -576,7 +576,7 @@ export const ContactSection = ({ onBookAppointment }) => {
             
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
-                <div className="bg-gradient-to-r from-purple-600 to-pink-500 rounded-lg p-3">
+                <div className="bg-gradient-to-r from-amber-500 to-yellow-500 rounded-lg p-3">
                   <Phone className="h-6 w-6 text-white" />
                 </div>
                 <div>
@@ -588,7 +588,7 @@ export const ContactSection = ({ onBookAppointment }) => {
               </div>
               
               <div className="flex items-center space-x-4">
-                <div className="bg-gradient-to-r from-purple-600 to-pink-500 rounded-lg p-3">
+                <div className="bg-gradient-to-r from-amber-500 to-yellow-500 rounded-lg p-3">
                   <Mail className="h-6 w-6 text-white" />
                 </div>
                 <div>
@@ -600,7 +600,7 @@ export const ContactSection = ({ onBookAppointment }) => {
               </div>
               
               <div className="flex items-center space-x-4">
-                <div className="bg-gradient-to-r from-purple-600 to-pink-500 rounded-lg p-3">
+                <div className="bg-gradient-to-r from-amber-500 to-yellow-500 rounded-lg p-3">
                   <MapPin className="h-6 w-6 text-white" />
                 </div>
                 <div>
@@ -610,7 +610,7 @@ export const ContactSection = ({ onBookAppointment }) => {
               </div>
               
               <div className="flex items-center space-x-4">
-                <div className="bg-gradient-to-r from-purple-600 to-pink-500 rounded-lg p-3">
+                <div className="bg-gradient-to-r from-amber-500 to-yellow-500 rounded-lg p-3">
                   <Clock className="h-6 w-6 text-white" />
                 </div>
                 <div>
