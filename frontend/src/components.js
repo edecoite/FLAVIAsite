@@ -44,19 +44,19 @@ export const Header = ({ onBookAppointment }) => {
           </div>
           
           <nav className="hidden md:flex space-x-8">
-            <a href="#home" className="text-gray-700 hover:text-purple-600 font-medium transition-colors">
+            <a href="#home" className="text-gray-700 hover:text-amber-600 font-medium transition-colors">
               Home
             </a>
-            <a href="#about" className="text-gray-700 hover:text-purple-600 font-medium transition-colors">
+            <a href="#about" className="text-gray-700 hover:text-amber-600 font-medium transition-colors">
               About
             </a>
-            <a href="#services" className="text-gray-700 hover:text-purple-600 font-medium transition-colors">
+            <a href="#services" className="text-gray-700 hover:text-amber-600 font-medium transition-colors">
               Services
             </a>
-            <a href="#approach" className="text-gray-700 hover:text-purple-600 font-medium transition-colors">
+            <a href="#approach" className="text-gray-700 hover:text-amber-600 font-medium transition-colors">
               Approach
             </a>
-            <a href="#contact" className="text-gray-700 hover:text-purple-600 font-medium transition-colors">
+            <a href="#contact" className="text-gray-700 hover:text-amber-600 font-medium transition-colors">
               Contact
             </a>
           </nav>
