@@ -109,20 +109,24 @@ select:focus {
 }
 
 /* Gradient background utilities */
-.bg-gradient-purple-pink {
-  background: linear-gradient(135deg, #7c3aed, #FFD8F0);
+.bg-gradient-pink-gold {
+  background: linear-gradient(135deg, #FFD8F0, #E6C200);
 }
 
-.bg-gradient-purple-pink-light {
-  background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(255, 216, 240, 0.1));
+.bg-gradient-pink-gold-light {
+  background: linear-gradient(135deg, rgba(255, 216, 240, 0.1), rgba(230, 194, 0, 0.1));
 }
 
 .bg-gradient-gold {
-  background: linear-gradient(135deg, #D97706, #F59E0B);
+  background: linear-gradient(135deg, #E6C200, #FFD700);
 }
 
 .bg-gradient-gold-light {
-  background: linear-gradient(135deg, rgba(217, 119, 6, 0.1), rgba(245, 158, 11, 0.1));
+  background: linear-gradient(135deg, rgba(230, 194, 0, 0.1), rgba(255, 215, 0, 0.1));
+}
+
+.bg-gradient-metallic-gold {
+  background: linear-gradient(135deg, #B8860B, #DAA520);
 }
 
 /* Typography enhancements */
