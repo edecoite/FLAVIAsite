@@ -1,7 +1,8 @@
-/* Custom styles for Beyond the Whiteboard clone */
+/* Custom styles for Flavia DeCoite Therapy Website */
 
 .App {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', 'Roboto', sans-serif;
+  line-height: 1.6;
 }
 
 /* Smooth scrolling */
@@ -15,16 +16,29 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #f8fafc;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #c1c1c1;
+  background: linear-gradient(135deg, #7c3aed, #ec4899);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #a8a8a8;
+  background: linear-gradient(135deg, #6d28d9, #db2777);
+}
+
+/* Gradient text utilities */
+.gradient-text {
+  background: linear-gradient(135deg, #7c3aed, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Hero section styling */
+.hero-gradient {
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.9), rgba(236, 72, 153, 0.9));
 }
 
 /* Image hover effects */
@@ -34,14 +48,30 @@ html {
 
 /* Button hover effects */
 button {
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button:hover {
+  transform: translateY(-1px);
 }
 
 /* Focus states for accessibility */
 button:focus,
-input:focus {
-  outline: 2px solid #3B82F6;
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid #7c3aed;
   outline-offset: 2px;
+}
+
+/* Card animations */
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 /* Loading animation */
@@ -54,18 +84,111 @@ input:focus {
   }
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease-out;
+}
+
 .animate-pulse {
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 /* Modal backdrop */
 .modal-backdrop {
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(8px);
 }
 
-/* Grid responsive adjustments */
+/* Gradient background utilities */
+.bg-gradient-purple-pink {
+  background: linear-gradient(135deg, #7c3aed, #ec4899);
+}
+
+.bg-gradient-purple-pink-light {
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(236, 72, 153, 0.1));
+}
+
+/* Typography enhancements */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .grid-responsive {
     grid-template-columns: 1fr;
   }
+  
+  .hero-text {
+    font-size: 2.5rem;
+  }
+  
+  .section-padding {
+    padding: 3rem 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-text {
+    font-size: 2rem;
+  }
+}
+
+/* Professional therapy styling */
+.therapy-card {
+  background: linear-gradient(135deg, #fdfcff, #f8fafc);
+  border: 1px solid rgba(124, 58, 237, 0.1);
+  transition: all 0.3s ease;
+}
+
+.therapy-card:hover {
+  border-color: rgba(124, 58, 237, 0.3);
+  box-shadow: 0 10px 30px rgba(124, 58, 237, 0.1);
+}
+
+/* Testimonial styling */
+.testimonial-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #7c3aed, #ec4899);
+}
+
+/* Contact form styling */
+.contact-form {
+  background: linear-gradient(135deg, #ffffff, #fdfcff);
+}
+
+/* Professional badge styling */
+.professional-badge {
+  background: linear-gradient(135deg, #7c3aed, #ec4899);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
