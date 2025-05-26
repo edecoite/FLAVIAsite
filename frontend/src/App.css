@@ -163,13 +163,13 @@ h1, h2, h3, h4, h5, h6 {
 /* Professional therapy styling */
 .therapy-card {
   background: linear-gradient(135deg, #fdfcff, #f8fafc);
-  border: 1px solid rgba(124, 58, 237, 0.1);
+  border: 1px solid rgba(230, 194, 0, 0.2);
   transition: all 0.3s ease;
 }
 
 .therapy-card:hover {
-  border-color: rgba(217, 119, 6, 0.3);
-  box-shadow: 0 10px 30px rgba(217, 119, 6, 0.15);
+  border-color: rgba(230, 194, 0, 0.4);
+  box-shadow: 0 10px 30px rgba(230, 194, 0, 0.15);
 }
 
 /* Testimonial styling */
@@ -185,7 +185,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, #7c3aed, #FFD8F0, #D97706);
+  background: linear-gradient(90deg, #FFD8F0, #E6C200, #FFD700);
 }
 
 /* Contact form styling */
@@ -195,7 +195,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Professional badge styling */
 .professional-badge {
-  background: linear-gradient(135deg, #7c3aed, #FFD8F0);
+  background: linear-gradient(135deg, #FFD8F0, #E6C200);
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 9999px;
@@ -207,11 +207,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Gold accent styling */
 .gold-accent {
-  background: linear-gradient(135deg, #D97706, #F59E0B);
+  background: linear-gradient(135deg, #E6C200, #FFD700);
 }
 
 .gold-text {
-  background: linear-gradient(135deg, #D97706, #F59E0B);
+  background: linear-gradient(135deg, #E6C200, #FFD700);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
