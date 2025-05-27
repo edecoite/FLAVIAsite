@@ -505,7 +505,7 @@ export const TestimonialsSection = () => {
           </span>
           <h2 className="text-4xl font-bold text-gray-900 mb-6">
             Stories of{' '}
-            <span className="bg-gradient-to-r from-pink-200 to-amber-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-pink-200 to-yellow-500 bg-clip-text text-transparent">
               Transformation
             </span>
           </h2>
