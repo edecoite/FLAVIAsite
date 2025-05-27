@@ -70,7 +70,7 @@ function flavia_therapy_setup() {
 add_action('after_setup_theme', 'flavia_therapy_setup');
 
 /**
- * Enqueue parent and child theme styles
+ * Enqueue premium styles and scripts
  */
 function flavia_therapy_enqueue_styles() {
     // Get parent theme version
@@ -87,6 +87,13 @@ function flavia_therapy_enqueue_styles() {
         wp_get_theme()->get('Version')
     );
     
+    // Enqueue premium effects
+    wp_enqueue_style('flavia-premium-effects',
+        get_stylesheet_directory_uri() . '/css/premium-effects.css',
+        array('flavia-child-style'),
+        wp_get_theme()->get('Version')
+    );
+    
     // Enqueue custom JavaScript
     wp_enqueue_script('flavia-custom-js',
         get_stylesheet_directory_uri() . '/js/custom.js',
@@ -98,7 +105,9 @@ function flavia_therapy_enqueue_styles() {
     // Localize script for AJAX
     wp_localize_script('flavia-custom-js', 'flavia_ajax', array(
         'ajax_url' => admin_url('admin-ajax.php'),
-        'nonce' => wp_create_nonce('flavia_nonce')
+        'nonce' => wp_create_nonce('flavia_nonce'),
+        'simple_practice_url' => get_theme_mod('flavia_simplepractice_url', ''),
+        'gtm_id' => get_theme_mod('flavia_gtm_id', ''),
     ));
 }
 add_action('wp_enqueue_scripts', 'flavia_therapy_enqueue_styles');
