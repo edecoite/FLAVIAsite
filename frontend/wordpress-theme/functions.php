@@ -3,13 +3,16 @@
  * Flavia DeCoite Therapy - DIVI Child Theme Functions
  * 
  * @package FlaviaTherapy
- * @version 1.0.0
+ * @version 2.0.0 - Premium Edition
  */
 
 // Prevent direct access
 if (!defined('ABSPATH')) {
     exit;
 }
+
+// Include advanced features
+require_once get_stylesheet_directory() . '/inc/advanced-features.php';
 
 /**
  * Theme Setup
@@ -27,11 +30,39 @@ function flavia_therapy_setup() {
         'caption',
     ));
     
+    // Add support for wide and full width blocks
+    add_theme_support('align-wide');
+    
+    // Add support for editor color palette
+    add_theme_support('editor-color-palette', array(
+        array(
+            'name' => 'Gold Primary',
+            'slug' => 'gold-primary',
+            'color' => '#E6C200',
+        ),
+        array(
+            'name' => 'Gold Secondary',
+            'slug' => 'gold-secondary',
+            'color' => '#FFD700',
+        ),
+        array(
+            'name' => 'Pink Primary',
+            'slug' => 'pink-primary',
+            'color' => '#FFD8F0',
+        ),
+    ));
+    
     // Register navigation menus
     register_nav_menus(array(
         'primary' => esc_html__('Primary Menu', 'flavia-therapy'),
         'footer' => esc_html__('Footer Menu', 'flavia-therapy'),
+        'social' => esc_html__('Social Media Menu', 'flavia-therapy'),
     ));
+    
+    // Add image sizes
+    add_image_size('service-card', 400, 300, true);
+    add_image_size('testimonial-avatar', 80, 80, true);
+    add_image_size('blog-featured', 600, 400, true);
 }
 add_action('after_setup_theme', 'flavia_therapy_setup');
 
