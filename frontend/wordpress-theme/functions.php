@@ -14,6 +14,9 @@ if (!defined('ABSPATH')) {
 // Include advanced features
 require_once get_stylesheet_directory() . '/inc/advanced-features.php';
 
+// Include DIVI modules
+require_once get_stylesheet_directory() . '/includes/divi-modules.php';
+
 /**
  * Theme Setup
  */
