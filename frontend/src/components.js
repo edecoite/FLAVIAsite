@@ -558,7 +558,7 @@ export const ContactSection = ({ onBookAppointment }) => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <span className="inline-block bg-purple-100 text-purple-600 px-4 py-2 rounded-full text-sm font-medium mb-4">
+            <span className="inline-block bg-yellow-100 text-yellow-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
               Get In Touch
             </span>
             <h2 className="text-4xl font-bold text-gray-900 mb-6 leading-tight">
