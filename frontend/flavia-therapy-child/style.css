@@ -1,0 +1,120 @@
+/*
+Theme Name: Flavia DeCoite Therapy - DIVI Child
+Description: Professional therapy website with elegant metallic gold and soft pink design. Custom DIVI child theme for Flavia DeCoite, LMFT.
+Author: Custom Design
+Template: Divi
+Version: 1.0.0
+Text Domain: flavia-therapy
+*/
+
+/* Import DIVI parent theme styles */
+@import url("../Divi/style.css");
+
+/* ===========================
+   CUSTOM THEME VARIABLES
+   =========================== */
+:root {
+  /* Metallic Gold Colors */
+  --gold-primary: #E6C200;
+  --gold-secondary: #FFD700;
+  --gold-dark: #B8860B;
+  --gold-darker: #DAA520;
+  
+  /* Soft Pink Colors */
+  --pink-primary: #FFD8F0;
+  --pink-light: #FFF0F9;
+  --pink-medium: #F3B8E6;
+  
+  /* Additional Colors */
+  --yellow-accent: #FCD34D;
+  --gray-dark: #374151;
+  --gray-medium: #6B7280;
+  --gray-light: #F3F4F6;
+  
+  /* Typography */
+  --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', 'Roboto', sans-serif;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* ===========================
+   GLOBAL OVERRIDES
+   =========================== */
+body {
+  font-family: var(--font-primary);
+  line-height: 1.6;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--gray-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, var(--gold-primary), var(--gold-secondary));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, var(--gold-dark), var(--gold-darker));
+}
+
+/* ===========================
+   CUSTOM BUTTON STYLES
+   =========================== */
+.btn-primary-gold {
+  background: linear-gradient(135deg, var(--pink-medium), var(--gold-secondary));
+  color: var(--gray-dark);
+  border: 2px solid var(--gold-secondary);
+  padding: 12px 32px;
+  border-radius: 50px;
+  font-weight: var(--font-weight-medium);
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-md);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-primary-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-xl);
+  color: var(--gray-dark);
+  text-decoration: none;
+}
+
+/* ===========================
+   THERAPY CARD STYLES
+   =========================== */
+.therapy-card {
+  background: linear-gradient(135deg, #fdfcff, #f8fafc);
+  border: 1px solid rgba(230, 194, 0, 0.2);
+  border-radius: 16px;
+  padding: 24px;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-md);
+}
+
+.therapy-card:hover {
+  border-color: rgba(230, 194, 0, 0.4);
+  box-shadow: var(--shadow-xl);
+  transform: translateY(-4px);
+}
