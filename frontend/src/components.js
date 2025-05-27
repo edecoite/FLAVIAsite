@@ -563,7 +563,7 @@ export const ContactSection = ({ onBookAppointment }) => {
             </span>
             <h2 className="text-4xl font-bold text-gray-900 mb-6 leading-tight">
               Ready to Begin Your{' '}
-              <span className="bg-gradient-to-r from-pink-200 to-amber-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-pink-200 to-yellow-500 bg-clip-text text-transparent">
                 Healing Journey?
               </span>
             </h2>
